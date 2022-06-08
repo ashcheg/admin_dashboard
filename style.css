@@ -14,16 +14,30 @@
 
 .header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: antiquewhite;
 }
 
 .sidebar {
     grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 1fr 6fr 3fr;
     background-color: aqua;
 }
 
+.sidebar h1 {
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.sidebar div {
+    padding-bottom: 20px;
+}
 .main_content {
     grid-area: main_content;
     background-color: aquamarine;
 }
+
 
