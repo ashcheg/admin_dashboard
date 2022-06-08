@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    gap: 10px;
+    grid-template-areas: 
+        "sidebar header"
+        "sidebar main_content";
+}
+
+.header {
+    grid-area: header;
+    background-color: antiquewhite;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: aqua;
+}
+
+.main_content {
+    grid-area: main_content;
+    background-color: aquamarine;
+}
+
