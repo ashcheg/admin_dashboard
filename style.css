@@ -6,6 +6,7 @@
 .container {
     display: grid;
     grid-template-columns: 2fr 5fr;
+    grid-template-rows: 1fr 4fr; 
     gap: 10px;
     grid-template-areas: 
         "sidebar header"
@@ -23,7 +24,7 @@
 .sidebar {
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 1fr 6fr 3fr;
+    grid-template-rows: 1fr 4fr auto;
     background-color: aqua;
 }
 
@@ -34,10 +35,41 @@
 
 .sidebar div {
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
+
 .main_content {
     grid-area: main_content;
+    display: grid;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+    grid-template-columns: 5fr 2fr;
+    gap: 10px;
     background-color: aquamarine;
 }
 
+.projects {
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    background-color: brown;
+}
+
+.projects h1 {
+
+}
+
+.announcements {
+    grid-area: announcements;
+    background-color: blueviolet;
+}
+
+.trending {
+    grid-area: trending;
+    background-color: blue;
+}
 
