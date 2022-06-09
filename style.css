@@ -53,23 +53,57 @@
 .projects {
     grid-area: projects;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 30px auto;
     gap: 10px;
     background-color: brown;
 }
 
-.projects h1 {
+.projects .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
 
+.project {
+    border: 2px grey solid;
+    border-left: 5px yellow solid;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 .announcements {
     grid-area: announcements;
+    display: grid;
+    grid-template-rows: 30px auto;
     background-color: blueviolet;
+}
+
+.announcements .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    border: 2px grey solid;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.line {
+    margin-top: 10px;
+    height: 1px;
+    width: auto;
+    background-color: grey;
 }
 
 .trending {
     grid-area: trending;
+    display: grid;
+    grid-template-rows: 30px auto;
     background-color: blue;
+    padding: 20px;
+}
+
+.trends {
+    display: grid;
+    gap: 15px;
 }
 
