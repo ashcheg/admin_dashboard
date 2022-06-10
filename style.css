@@ -5,7 +5,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: minmax(200px, 300px) 5fr;
     grid-template-rows: 1fr 4fr; 
     gap: 10px;
     grid-template-areas: 
@@ -24,7 +24,7 @@
 .sidebar {
     grid-area: sidebar;
     display: grid;
-    grid-template-rows: 1fr 4fr auto;
+    grid-template-rows: 100px 3fr 1fr;
     background-color: aqua;
 }
 
@@ -33,10 +33,12 @@
     padding-bottom: 20px;
 }
 
-.sidebar div {
-    padding-bottom: 20px;
+.sidebar div img {
+    height: 30px;
+}
+
+li {
     display: flex;
-    flex-direction: column;
 }
 
 .main_content {
