@@ -5,7 +5,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: minmax(200px, 300px) 5fr;
+    grid-template-columns: 250px 5fr;
     grid-template-rows: 1fr 4fr; 
     gap: 10px;
     grid-template-areas: 
@@ -33,12 +33,24 @@
     padding-bottom: 20px;
 }
 
-.sidebar div img {
+li img {
     height: 30px;
 }
 
-li {
+.logo {
     display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+li {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .main_content {
