@@ -154,7 +154,7 @@ a {
         "projects announcements"
         "projects trending";
     grid-template-columns: 5fr 2fr;
-    padding-top: 25px;
+    padding-top: 30px;
     padding-left: 15px;
     gap: 10px;
     background-color: var(--grey);
@@ -165,14 +165,13 @@ a {
     display: grid;
     grid-template-rows: 30px auto;
     gap: 10px;
-    padding-bottom: 15px;
     background-color: var(--grey);
 }
 
 .projects .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
-    gap: 15px;
+    gap: 10px;
 }
 
 .project {
@@ -215,8 +214,7 @@ a {
     grid-area: trending;
     display: grid;
     gap: 10px;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding-top: 30px;
     grid-template-rows: 30px auto;
     background-color: var(--grey);
 }

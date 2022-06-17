@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
     <title>Document</title>
-</head>
+<link rel="stylesheet" href="./Document_files/style.css"></head>
 <body>
     <div class="container">
         <div class="header">
@@ -15,12 +15,12 @@
                 <input type="search" class="search" id="search">
             </div>
             <div class="t_right">
-                <img src="bell-ring-outline.svg" alt="bell" class="bell-img">
-                <img src="AvatarMaker.svg" alt="avatar" class="avatar">
+                <img src="./Document_files/bell-ring-outline.svg" alt="bell" class="bell-img">
+                <img src="./Document_files/AvatarMaker.svg" alt="avatar" class="avatar">
                 <p class="username">Lena Ashburn</p>
             </div>
             <div class="b_left">
-                <img src="AvatarMaker.svg" alt="avatar" class="avatar">
+                <img src="./Document_files/AvatarMaker.svg" alt="avatar" class="avatar">
                 <div>
                     <p class="greetings">Hi there,</p>
                     <p class="username">Lena Ashburn (@ashburn)</p>
@@ -34,50 +34,50 @@
         </div>
         <div class="sidebar">
             <div class="logo">
-                <img src="bullseye-arrow.svg" alt="bullseye-arrow">
+                <img src="./Document_files/bullseye-arrow.svg" alt="bullseye-arrow">
                 <h1>Dashboard</h1>
             </div>
             <div class="menu-top">
                 <ul>
                     <li>
-                        <img src="home.svg" alt="home">
-                        <a href="">Home</a>
+                        <img src="./Document_files/home.svg" alt="home">
+                        <a href="http://127.0.0.1:5500/index.html">Home</a>
                     </li>
                     <li>
-                        <img src="account-details.svg" alt="profile">
-                        <a href="">Profile</a>
+                        <img src="./Document_files/account-details.svg" alt="profile">
+                        <a href="http://127.0.0.1:5500/index.html">Profile</a>
                     </li>
                     <li>
-                        <img src="comment-text.svg" alt="messages">
-                        <a href="">Messages</a>
+                        <img src="./Document_files/comment-text.svg" alt="messages">
+                        <a href="http://127.0.0.1:5500/index.html">Messages</a>
                     </li>
                     <li>
-                        <img src="clock.svg" alt="history">
-                        <a href="">History</a>
+                        <img src="./Document_files/clock.svg" alt="history">
+                        <a href="http://127.0.0.1:5500/index.html">History</a>
                     </li>
                     <li>
-                        <img src="format-list-bulleted-square.svg" alt="tasks">
-                        <a href="">Tasks</a>
+                        <img src="./Document_files/format-list-bulleted-square.svg" alt="tasks">
+                        <a href="http://127.0.0.1:5500/index.html">Tasks</a>
                     </li>
                     <li>
-                        <img src="account-group.svg" alt="communities">
-                        <a href="">Communities</a>
+                        <img src="./Document_files/account-group.svg" alt="communities">
+                        <a href="http://127.0.0.1:5500/index.html">Communities</a>
                     </li>
                 </ul>
             </div>
             <div class="menu-bottom">
                 <ul>
                     <li>
-                        <img src="hammer-wrench.svg" alt="settings">
-                        <a href="">Settings</a>
+                        <img src="./Document_files/hammer-wrench.svg" alt="settings">
+                        <a href="http://127.0.0.1:5500/index.html">Settings</a>
                     </li>
                     <li>
-                        <img src="help-circle.svg" alt="support">
-                        <a href="">Support</a>
+                        <img src="./Document_files/help-circle.svg" alt="support">
+                        <a href="http://127.0.0.1:5500/index.html">Support</a>
                     </li>
                     <li>
-                        <img src="lock-check.svg" alt="privacy">
-                        <a href="">Privacy</a>
+                        <img src="./Document_files/lock-check.svg" alt="privacy">
+                        <a href="http://127.0.0.1:5500/index.html">Privacy</a>
                     </li>
             </ul>
             </div>
@@ -144,5 +144,42 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
